@@ -1,0 +1,8 @@
+version: '3.7'
+services:
+    json-api-todo:
+        build: .
+        volumes:
+            - ./source/*:/var/www/html/
+        ports:
+            - "8000:80"
